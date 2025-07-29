@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Event Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Music Event Finder</h1>
+        <p>Discover upcoming music events near you or for your favorite artists</p>
+    </header>
+
+    <!-- Search form -->
+    <form id="search-form" role="search" aria-label="Search for music events">
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Enter artist name or city"
+            aria-label="Search for artist or city"
+            required
+        >
+        <button type="submit">Search</button>
+        <button type="button" id="clear-btn">Clear Search</button>
+    </form>
+
+    <!-- Loading spinner -->
+    <div id="loading" aria-live="polite">Loading... ⏳</div>
+
+    <!-- Error message -->
+    <div id="error" role="alert"></div>
+
+    <!-- Results container -->
+    <div id="results" role="region" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
